@@ -52,7 +52,7 @@ namespace TypingTest
         protected void Clock(object sender, EventArgs e)
         {
             timerTicks++;
-            wordCountText.Text = "Word Count:" + wordTally + "\nTime: " + timerTicks;
+            wordCountText.Text = "Ilość słów:" + wordTally + "\nCzas: " + timerTicks;
         }
 
         protected void CountTextLength (object sender, EventArgs e)
@@ -88,7 +88,8 @@ namespace TypingTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            //new Form1();
+            Application.Restart();
         }
 
         //Finish test, clean things up, and tie up some loose ends
@@ -102,7 +103,7 @@ namespace TypingTest
             //cast as a double to prevent weirdness like 0 WPM
             wordsPerMinute = (double)typingSample.Text.Length / 60;
             //update label on right pane to display WPM
-            wordCountText.Text += "\nWords per minute: " + wordsPerMinute;
+            wordCountText.Text += "\nSłów na minutę: " + wordsPerMinute.ToString("N2");
 
             //Check for and hightlight errors
             ErrorCheck();
@@ -152,42 +153,32 @@ namespace TypingTest
             //multiply that value by the number of errors
             double errorPercentage = numErrors * errorValue;
 
-            wordCountText.Text += "\nError Percentage: " + errorPercentage + "%";
+            wordCountText.Text += "\nProcent błędu: " + errorPercentage + "%";
 
         }
         
 
-        //So, I need to get the count of words in a string...
         public void CheckWordCount()
         {
-            //this looks like a job for Regular Expressions!
             string lookForThis = @"[^\s]+";
             string[] inputContents = null;
             inputContents = Regex.Split(userInput.Text, lookForThis, RegexOptions.IgnoreCase);
 
-            //adjust word count as needed and display word count and time
             wordTally = inputContents.Length - 1;
-            wordCountText.Text = "Word Count:" + wordTally + "\nTime: " + timerTicks;
+            wordCountText.Text = "Ilość słów:" + wordTally + "\nCzas: " + timerTicks;
         }
 
-        //method to add sample sentences to the array
-        //Really just using this to keep the rest of the program un-cluttered
         public void PopulateSampleSentences()
         {
-            //sampleSentences.Add("The quick brown fox jumps over the lazy dog");
-            ////Samuel L. Jackson in Pulp Fiction
-            //sampleSentences.Add("Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.");
-            ////Excerpt from Alice in Wonderland by Lewis Carroll
-            //sampleSentences.Add("'Yes, that's it,' said the Hatter with a sigh: 'it's always tea-time, and we've no time to wash the things between whiles.'");
-            ////Excerpt from A Princess of Mars by Edgar Rice Burroughs
-            //sampleSentences.Add("This latter alternative is always permissible, therefore I could have used my short-sword, my dagger, my hatchet, or my fists had I wished, and been entirely within my rights, but I could not use firearms or a spear while he held only his long-sword.");
-            ////Exceprt from Around the World in 80 Days by Jules Verne
-            //sampleSentences.Add("Phileas Fogg had not concealed from Sir Francis his design of going round the world, nor the circumstances under which he set out; and the general only saw in the wager a useless eccentricity and a lack of sound common sense.");
-            ////The following pangrams were found on clagnut.com
-            //sampleSentences.Add("Jack quietly moved up and seized the big ball of wax");
-            //sampleSentences.Add("Crazy Frederick bought many very exquisite opal jewels");
-            //sampleSentences.Add("A quivering Texas zombie fought republic linked jewelry");
-            //sampleSentences.Add("Grumpy wizards make toxic brew for the evil queen and jack");
+            sampleSentences.Add("The quick brown fox jumps over the lazy dog");
+            sampleSentences.Add("Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.");
+            sampleSentences.Add("'Yes, that's it,' said the Hatter with a sigh: 'it's always tea-time, and we've no time to wash the things between whiles.'");
+            sampleSentences.Add("This latter alternative is always permissible, therefore I could have used my short-sword, my dagger, my hatchet, or my fists had I wished, and been entirely within my rights, but I could not use firearms or a spear while he held only his long-sword.");
+            sampleSentences.Add("Phileas Fogg had not concealed from Sir Francis his design of going round the world, nor the circumstances under which he set out; and the general only saw in the wager a useless eccentricity and a lack of sound common sense.");
+            sampleSentences.Add("Jack quietly moved up and seized the big ball of wax");
+            sampleSentences.Add("Crazy Frederick bought many very exquisite opal jewels");
+            sampleSentences.Add("A quivering Texas zombie fought republic linked jewelry");
+            sampleSentences.Add("Grumpy wizards make toxic brew for the evil queen and jack");
             sampleSentences.Add("Just keep examining every low bid quoted for zinc etchings");
             sampleSentences.Add("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
         }
