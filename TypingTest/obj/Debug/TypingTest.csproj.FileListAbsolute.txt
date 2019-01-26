@@ -1,0 +1,19 @@
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\bin\Debug\TypingTest.exe.config
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\bin\Debug\TypingTest.exe
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\bin\Debug\TypingTest.pdb
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.Form1.resources
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.Properties.Resources.resources
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.csproj.GenerateResource.Cache
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.exe
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.pdb
+c:\users\joseph\documents\visual studio 2015\Projects\TypingTest\TypingTest\obj\Debug\TypingTest.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\bin\Debug\TypingTest.exe.config
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\bin\Debug\TypingTest.exe
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\bin\Debug\TypingTest.pdb
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.Form1.resources
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.Properties.Resources.resources
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.csproj.GenerateResource.cache
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.exe
+C:\Users\Adrian\Desktop\__PROJEKTY__\Typing-Test-master\Typing-Test-master\TypingTest\obj\Debug\TypingTest.pdb
